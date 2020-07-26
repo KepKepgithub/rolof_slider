@@ -13,20 +13,32 @@
                 z-index: 2
                 padding-left: 100px
                 max-width: 635px
+                overflow: hidden
                 span
                     font-weight: bold
                     text-transform: uppercase
                     font-size: 2rem
                     margin-bottom: 20px
                     opacity: .3
+                    transform: translateX(1500px)
+                span.slide_animation
+                    transform: translateX(0px)
+                    opacity: 0.3
+                    transition: all 1550ms
                 h1
                     font-size: 6rem
                     margin-bottom: 2rem
                     font-weight: 400
                     color: #222222
+                    transform: translateX(1000px)
+                    opacity: 0
+                h1.slide_animation
+                    transform: translateX(0px)
+                    opacity: 1
+                    transition: all 1000ms
                 .buy_now_button
                     max-width: 225px
-                    padding: 25px 40px
+                    padding: 25px 50px
                     border: none
                     border-radius: 40px
                     font-size: 2rem
@@ -49,6 +61,12 @@
                 position: absolute
                 bottom: 0
                 right: 10%
+                transform: translateX(1000px)
+                opacity: 0
+            img.slide_animation
+                transform: translateX(0)
+                opacity: 1
+                transition: all 1000ms
             .page_count
                 position: absolute
                 bottom: 30px
@@ -90,4 +108,23 @@
 @media screen and (max-width: 768px)
     .swiper-pagination
         margin-left: 2%
-    
+    .swiper-container
+        .swiper-wrapper
+            .swiper-slide
+                .slider_text_wrap
+                    padding-left: 10px
+                    span
+                        font-size: 1.4rem
+                    h1
+                        font-size: 2.2rem
+                    .buy_now_button
+                        padding: 20px 40px
+                img
+                    right: -1.5%
+                #first_image
+                    right: -30%
+                .page_count
+                    right: 10px
+
+.slider_max_width
+    max-width: 700px
