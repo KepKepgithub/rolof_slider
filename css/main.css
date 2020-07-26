@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.swiper-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .slider_text_wrap {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+  padding-left: 100px;
+  max-width: 635px;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .slider_text_wrap span {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  opacity: .3;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .slider_text_wrap h1 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: #222222;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .slider_text_wrap .buy_now_button {
+  max-width: 225px;
+  padding: 25px 40px;
+  border: none;
+  border-radius: 40px;
+  font-size: 2rem;
+  text-align: start;
+  background: #f94144;
+  color: white;
+  position: relative;
+  line-height: 0;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 250ms;
+  transition: -webkit-box-shadow 250ms;
+  transition: box-shadow 250ms;
+  transition: box-shadow 250ms, -webkit-box-shadow 250ms;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .slider_text_wrap .buy_now_button::after {
+  position: absolute;
+  content: "BUY NOW";
+  padding-left: 20px;
+  font-size: 1.4rem;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .slider_text_wrap .buy_now_button:hover {
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-container .swiper-wrapper .swiper-slide img {
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .page_count {
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #f94144;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .page_count::after {
+  content: " / 4";
+  font-size: 2.2rem;
+  color: white;
+}
+
+.swiper-container .swiper-wrapper .slide_color:nth-child(1) {
+  background: #e29578;
+}
+
+.swiper-container .swiper-wrapper .slide_color:nth-child(2) {
+  background: #ffddd2;
+}
+
+.swiper-container .swiper-wrapper .slide_color:nth-child(3) {
+  background: #83c5be;
+}
+
+.swiper-container .swiper-wrapper .slide_color:nth-child(4) {
+  background: #006d77;
+}
+
+.swiper-pagination {
+  text-align: unset;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background: white;
+  opacity: .8;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  border: 2px solid red;
+  padding: 5px;
+  background: transparent;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-pagination {
+    margin-left: 2%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

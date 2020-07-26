@@ -1,0 +1,93 @@
+
+.swiper-container
+    width: 100vw
+    height: 100vh
+    .swiper-wrapper
+        .swiper-slide
+            .slider_text_wrap
+                position: relative
+                height: 100%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                z-index: 2
+                padding-left: 100px
+                max-width: 635px
+                span
+                    font-weight: bold
+                    text-transform: uppercase
+                    font-size: 2rem
+                    margin-bottom: 20px
+                    opacity: .3
+                h1
+                    font-size: 6rem
+                    margin-bottom: 2rem
+                    font-weight: 400
+                    color: #222222
+                .buy_now_button
+                    max-width: 225px
+                    padding: 25px 40px
+                    border: none
+                    border-radius: 40px
+                    font-size: 2rem
+                    text-align: start
+                    background: #f94144
+                    color: white
+                    position: relative
+                    line-height: 0
+                    cursor: pointer
+                    transition: box-shadow 250ms
+                    &::after
+                        position: absolute
+                        content: "BUY NOW"
+                        padding-left: 20px
+                        font-size: 1.4rem
+                    &:hover
+                        box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.20)
+            img
+                height: 100%
+                position: absolute
+                bottom: 0
+                right: 10%
+            .page_count
+                position: absolute
+                bottom: 30px
+                right: 100px
+                font-weight: 600
+                font-size: 3rem
+                color: #f94144
+                &::after
+                    content: " / 4"
+                    font-size: 2.2rem
+                    color: white
+        .slide_color
+            &:nth-child(1)
+                background: #e29578
+            &:nth-child(2)
+                background: #ffddd2
+            &:nth-child(3)
+                background: #83c5be
+            &:nth-child(4)
+                background: #006d77
+
+.swiper-pagination
+    text-align: unset
+    margin-bottom: 20px
+    margin-left: 100px
+    display: flex
+    align-items: center
+    .swiper-pagination-bullet
+        background: white
+        opacity: .8
+    .swiper-pagination-bullet-active
+        border: 2px solid red
+        padding: 5px
+        background: transparent
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+    margin: 0 10px
+
+@media screen and (max-width: 768px)
+    .swiper-pagination
+        margin-left: 2%
+    
