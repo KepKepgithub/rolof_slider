@@ -49,6 +49,8 @@ body {
           transform: translateX(1500px);
 }
 
+/* span animation, span transition */
+
 .swiper-container .swiper-wrapper .swiper-slide .slider_text_wrap span.slide_animation {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
@@ -66,7 +68,7 @@ body {
           transform: translateX(1000px);
   opacity: 0;
 }
-
+/* text amnimation, text transition */
 .swiper-container .swiper-wrapper .swiper-slide .slider_text_wrap h1.slide_animation {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
@@ -114,7 +116,7 @@ body {
           transform: translateX(1000px);
   opacity: 0;
 }
-
+/* image animation, image transition */
 .swiper-container .swiper-wrapper .swiper-slide img.slide_animation {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -137,6 +139,8 @@ body {
   font-size: 2.2rem;
   color: white;
 }
+
+/* slider colors, slide colors */
 
 .swiper-container .swiper-wrapper .slide_color:nth-child(1) {
   background: #e29578;
