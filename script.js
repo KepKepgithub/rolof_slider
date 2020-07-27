@@ -14,13 +14,13 @@ var mySwiper = new Swiper('.swiper-container', {
   // when user opens page load the animations onto the first slide
 window.onload = ()=>{
   const active_slide_image = document.querySelector(".swiper-slide-active .slide_image");
-  // "New product text"
+  // "New product" text
   const active_slide_text1 = document.querySelector(".swiper-slide-active .slider_content span");
   // Product description text
   const active_slide_text2 = document.querySelector(".swiper-slide-active .slider_content h1");
 
   active_slide_image.classList.add("slide_animation");
-  active_slide_text1.classList.add("slide_animation");
+  setTimeout(()=>{active_slide_text1.classList.add("slide_animation");},500)
   active_slide_text2.classList.add("slide_animation");
 }
   mySwiper.on('slideChangeTransitionEnd', function () {
@@ -45,8 +45,7 @@ window.onload = ()=>{
     // Product description text
     const active_slide_text2 = document.querySelector(".swiper-slide-active .slider_content h1");
 
-    console.log('slide changed');
     active_slide_image.classList.add("slide_animation");
-    active_slide_text1.classList.add("slide_animation");
+    setTimeout(()=>{active_slide_text1.classList.add("slide_animation");},500)
     active_slide_text2.classList.add("slide_animation");
   });

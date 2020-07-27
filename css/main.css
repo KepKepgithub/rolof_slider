@@ -50,16 +50,16 @@ body {
       -ms-user-select: none;
           user-select: none;
   opacity: .3;
-  -webkit-transform: translateX(900px);
-          transform: translateX(900px);
+  -webkit-transform: translateX(1000px);
+          transform: translateX(1000px);
 }
 
 .swiper-container .swiper-wrapper .swiper-slide .slider_content span.slide_animation {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
   opacity: 0.3;
-  -webkit-transition: all 1550ms;
-  transition: all 1550ms;
+  -webkit-transition: all 1000ms ease;
+  transition: all 1000ms ease;
 }
 
 .swiper-container .swiper-wrapper .swiper-slide .slider_content h1 {
@@ -72,8 +72,8 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transform: translateX(600px);
-          transform: translateX(600px);
+  -webkit-transform: translateX(1000px);
+          transform: translateX(1000px);
   opacity: 0;
 }
 
@@ -81,8 +81,8 @@ body {
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
   opacity: 1;
-  -webkit-transition: all 1000ms;
-  transition: all 1000ms;
+  -webkit-transition: all 1000ms ease-out;
+  transition: all 1000ms ease-out;
 }
 
 .swiper-container .swiper-wrapper .swiper-slide .slider_content .btn {
