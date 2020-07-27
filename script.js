@@ -2,7 +2,7 @@ var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     allowTouchMove: true,
-    speed: 1000,
+    speed: 800,
     autoplay: {
         delay: 5000,
       },

@@ -208,14 +208,12 @@ body {
   .swiper-container .swiper-wrapper .swiper-slide .slider_content h1 {
     font-size: 2.2rem;
   }
-  .swiper-container .swiper-wrapper .swiper-slide .slider_content .buy_now_button {
-    padding: 20px 40px;
+  .swiper-container .swiper-wrapper .swiper-slide .slider_content .btn {
+    max-width: 190px;
+    padding: 10px 30px;
   }
   .swiper-container .swiper-wrapper .swiper-slide img {
     right: -1.5%;
-  }
-  .swiper-container .swiper-wrapper .swiper-slide #first_image {
-    right: -30%;
   }
   .swiper-container .swiper-wrapper .swiper-slide .page_count {
     right: 10px;
