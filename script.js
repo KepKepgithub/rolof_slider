@@ -4,7 +4,7 @@ var mySwiper = new Swiper('.swiper-container', {
     allowTouchMove: true,
     speed: 1000,
     autoplay: {
-        delay: 2000,
+        delay: 5000,
       },
     pagination: {
       el: '.swiper-pagination',
