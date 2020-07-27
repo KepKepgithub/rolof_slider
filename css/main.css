@@ -45,6 +45,10 @@ body {
   font-size: 2rem;
   margin-bottom: 20px;
   pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   opacity: .3;
   -webkit-transform: translateX(900px);
           transform: translateX(900px);
@@ -64,6 +68,10 @@ body {
   font-weight: 400;
   color: #222222;
   pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-transform: translateX(600px);
           transform: translateX(600px);
   opacity: 0;
@@ -120,6 +128,10 @@ body {
   bottom: 0;
   right: 10%;
   pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   display: block;
   max-width: 100%;
   -o-object-fit: cover;
