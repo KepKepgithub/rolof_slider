@@ -4,7 +4,7 @@
     height: 100vh
     .swiper-wrapper
         .swiper-slide
-            .slider_text_wrap
+            .slider_content
                 position: relative
                 height: 100%
                 display: flex
@@ -19,6 +19,7 @@
                     text-transform: uppercase
                     font-size: 2rem
                     margin-bottom: 20px
+                    pointer-events: none
                     opacity: .3
                     transform: translateX(1500px)
                 span.slide_animation
@@ -30,13 +31,14 @@
                     margin-bottom: 2rem
                     font-weight: 400
                     color: #222222
+                    pointer-events: none
                     transform: translateX(1000px)
                     opacity: 0
                 h1.slide_animation
                     transform: translateX(0px)
                     opacity: 1
                     transition: all 1000ms
-                .buy_now_button
+                .btn
                     max-width: 225px
                     padding: 25px 50px
                     border: none
@@ -81,16 +83,15 @@
                     content: " / 4"
                     font-size: 2.2rem
                     color: white
-        .slide_color
-            &:nth-child(1)
-                background: #e29578
-            &:nth-child(2)
-                background: #ffddd2
-            &:nth-child(3)
-                background: #83c5be
-            &:nth-child(4)
-                background: #006d77
-
+        .dark_salmon
+            background: #e9967a
+        .light_salmon
+            background: #FFA07A
+        .light_sea_green
+            background: #20B2AA
+        .dark_cyan
+            background: #008B8B
+            
 .swiper-pagination
     text-align: unset
     margin-bottom: 20px
