@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
-* {
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.swiper-container, .swiper-container * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -223,6 +230,10 @@
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px;
+}
+
+.swiper-small {
+  max-width: 700px;
 }
 
 @media screen and (max-width: 768px) {
