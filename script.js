@@ -15,9 +15,9 @@ var mySwiper = new Swiper('.swiper-container', {
 window.onload = ()=>{
   const active_slide_image = document.querySelector(".swiper-slide-active .slide_image");
   // "New product" text
-  const active_slide_text1 = document.querySelector(".swiper-slide-active .slider_content span");
+  const active_slide_text1 = document.querySelector(".swiper-slide-active .slider-content span");
   // Product description text
-  const active_slide_text2 = document.querySelector(".swiper-slide-active .slider_content h1");
+  const active_slide_text2 = document.querySelector(".swiper-slide-active .slider-content h1");
 
   active_slide_image.classList.add("slide_animation");
   setTimeout(()=>{active_slide_text1.classList.add("slide_animation");},500)
@@ -26,8 +26,8 @@ window.onload = ()=>{
   mySwiper.on('slideChangeTransitionEnd', function () {
     // Removes the class from all other slides 
     const all_slides_image = document.querySelectorAll(".swiper-slide .slide_image");
-    const all_slides_text1 = document.querySelectorAll(".swiper-slide .slider_content span");
-    const all_slides_text2 = document.querySelectorAll(".swiper-slide .slider_content h1");
+    const all_slides_text1 = document.querySelectorAll(".swiper-slide .slider-content span");
+    const all_slides_text2 = document.querySelectorAll(".swiper-slide .slider-content h1");
     all_slides_image.forEach((e)=>{
       e.classList.remove("slide_animation");
     })
@@ -41,9 +41,9 @@ window.onload = ()=>{
     // QUERRIES NEED TO BE UPPDATED EVERY TIME THE SLIDE CHANGES THAT'S WHY THEY ARE HERE
     const active_slide_image = document.querySelector(".swiper-slide-active .slide_image");
     // "New product text"
-    const active_slide_text1 = document.querySelector(".swiper-slide-active .slider_content span");
+    const active_slide_text1 = document.querySelector(".swiper-slide-active .slider-content span");
     // Product description text
-    const active_slide_text2 = document.querySelector(".swiper-slide-active .slider_content h1");
+    const active_slide_text2 = document.querySelector(".swiper-slide-active .slider-content h1");
 
     active_slide_image.classList.add("slide_animation");
     setTimeout(()=>{active_slide_text1.classList.add("slide_animation");},500)
